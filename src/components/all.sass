@@ -26,10 +26,31 @@ $error-red: #930006
 $error-red-lighter: #FF897A
 
 
+// General styles for whole page
+body
+  background-color: $background-dark
+  color: $text-mint-cream
+
+
+// Navigation bar
+.navbar
+  background-color: $layer-1 !important
+  color: $text-mint-cream
+  position: fixed
+
+.logo
+  width: 350px
+  height: 300px
+  background-color: $layer-1
+  text-shadow: 2px 2px 5px $text-mint-cream
+  
 .navbar .navbar-menu
-  box-shadow: none !important
+  box-shadow: none
+  color: $text-mint-cream
+  
 
 .content .taglist
+  
   list-style: none
   margin-bottom: 0
   margin-left: 0
@@ -40,32 +61,13 @@ $error-red-lighter: #FF897A
   justify-content: left
   align-items: center
   li
+    color: $text-mint-cream
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
 
 // Helper Classes
-.full-width-image-container
-  width: 100vw
-  height: 400px
-  position: relative
-  left: 50%
-  right: 50%
-  margin: 2em -50vw
-  background-size: cover
-  background-position: bottom
-  display: flex
-  justify-content: center
-  align-items: center
 
-.full-width-image
-    width: 100vw
-    height: 400px
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
 
 .btn
     display: inline-block
@@ -88,31 +90,62 @@ $error-red-lighter: #FF897A
   margin-top: 0 !important
 
 .navbar-item .icon
-  color: $primary
+  color: $primary-mint
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
-footer.footer
+
+
+// Fullwidth-Image container
+.full-width-image-container
+  width: 100vw
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 2em -50vw
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+.full-width-image
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+    
+.hero-img-title
+  background-color: $layer-3
+  color: $primary-mint !important
+  padding: 10px
+
+.hero-img-subtitle
+  background-color: $layer-3
+  color: $primary-mint-darker !important
+  padding: 10px
+
+
+footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
 //Menu overrides
-$menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
-$menu-label-color: $white-ter
+$menu-item-color: $text-mint-cream
+$menu-item-hover-color: $text-mint-cream !important
+$menu-item-hover-background-color: $text-mint-cream
+$menu-item-active-color: $text-mint-cream
+$menu-item-active-background-color:	$text-mint-cream
+$menu-list-border-left: 1px solid $primary-mint
 
 
-.menu-label
-  font-size: 1em !important
-  text-align: left
+
 .menu-list
   list-style: none !important
   text-align: left
@@ -121,7 +154,7 @@ $menu-label-color: $white-ter
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em
-    background-color: $white-ter
+    background-color: $primary-mint
     margin: .5em
     width: 1em
     height: 1em
@@ -130,7 +163,7 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033
+  background-color: $background-dark
 .blog-list-item header
   display: flex
   margin-bottom: 1em

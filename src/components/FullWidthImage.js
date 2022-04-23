@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
+
+// This is a complete 
 export default function FullWidthImage(props) {
   const {
-    height = 400,
+    height = 350,
     img,
     title,
     subheading,
@@ -31,12 +33,9 @@ export default function FullWidthImage(props) {
               height: height,
               width: "100%",
             }}
-            // You can optionally force an aspect ratio for the generated image
-            aspectratio={3 / 1}
+            
             // This is a presentational image, so the alt should be an empty string
-            alt=""
-            formats={["auto", "webp", "avif"]}
-          />
+            alt="" />
         ) : (
           <GatsbyImage
             image={img}
@@ -69,14 +68,11 @@ export default function FullWidthImage(props) {
             {/* Any content here will be centered in the component */}
             {title && (
               <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                className="hero-img-title has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
                   color: "white",
                   lineHeight: "1",
-                  padding: "0.25em",
+                  
                 }}
               >
                 {title}
@@ -84,11 +80,8 @@ export default function FullWidthImage(props) {
             )}
             {subheading && (
               <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                className="hero-img-subtitle has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25rem",
