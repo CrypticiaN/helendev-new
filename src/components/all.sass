@@ -29,6 +29,8 @@ $error-red-lighter: #FF897A
 // General styles for whole page
 body
   background-color: $background-dark
+
+*
   color: $text-mint-cream
 
 
@@ -36,17 +38,32 @@ body
 .navbar
   background-color: $layer-1 !important
   color: $text-mint-cream
-  position: fixed
+  position: absolute
+  width: 100vw
+  justify-content: space-between
+
+.navbar-brand
+  width: 33vw
 
 .logo
   width: 350px
-  height: 300px
+  height: 100%
   background-color: $layer-1
   text-shadow: 2px 2px 5px $text-mint-cream
+  position: fixed
   
-.navbar .navbar-menu
+.navbar.navbar-menu
+  width: 33vw
   box-shadow: none
+  justify-content: center
+  
+#nav-menu
+  position: fixed
+
+.navbar-item
   color: $text-mint-cream
+
+//.github-btn
   
 
 .content .taglist
@@ -60,6 +77,7 @@ body
   flex-wrap: wrap
   justify-content: left
   align-items: center
+  color: $text-mint-cream
   li
     color: $text-mint-cream
     padding: 0 2rem 1rem 0
@@ -75,27 +93,17 @@ body
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: $secondary-pink
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: $text-mint-cream
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
 .margin-top-0
   margin-top: 0 !important
-
-.navbar-item .icon
-  color: $primary-mint
-// Override for use of svg's from https://simpleicons.org/
-.icon svg
-  width: 1.5rem
-  height: 1.5rem
-  fill: currentColor
 
 
 // Fullwidth-Image container
@@ -125,27 +133,28 @@ body
   background-color: $layer-2
     
 .hero-img-title
-  background-color: $layer-3
+  text-shadow: 3px 3px 5px $layer-3
   color: $primary-mint !important
   padding: 10px
   font-weight: bolder
 
 .hero-img-subtitle
-  background-color: $layer-3
+  text-shadow: 3px 3px 5px $layer-3
   color: $primary-mint-darker !important
   padding: 10px
+  text-align: center
 
 
 footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
+  padding: 0rem 0rem 0rem
+  background-color: $layer-1
 
 
 .menu-list
   list-style: none !important
   text-align: left
 .social
-  padding: 2em
+  padding: 1em
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em
