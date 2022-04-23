@@ -66,9 +66,10 @@ export default function FullWidthImage(props) {
             }}
           >
             {/* Any content here will be centered in the component */}
-            {title && (
+            <div className="hero-img-textbox">
+              {title && (
               <h1
-                className="hero-img-title has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                className="hero-img-title is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
                   color: "white",
                   lineHeight: "1",
@@ -91,6 +92,8 @@ export default function FullWidthImage(props) {
                 {subheading}
               </h3>
             )}
+            </div>
+            
           </div>
         )}
       </div>
