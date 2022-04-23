@@ -2,15 +2,17 @@
 templateKey: index-page
 title: < Helen Didsbury />
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: What I do
 subheading: Full Stack Web Developer
 mainpitch:
-  title: What I do
+  title: Who I am
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    I am a Junior FullStack Web Developer with a
+    strong passion for technology and the digital world, and excited about building modern web 
+    applications and tools that make people’s work
+    and life easier. Creating, investigating and 
+    trying new things are areas in which I thrive,
+    and I enjoy passing this motivation to the ones around me.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
