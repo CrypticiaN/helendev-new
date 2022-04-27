@@ -3,7 +3,7 @@ templateKey: 'skills-page'
 path: /skills
 title: < My Skills />
 image: /img/jumbotron.jpg
-heading: let coding =
+heading: let languages =
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -45,7 +45,7 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Great coffee with no compromises
+  heading: let frameworks_libraries =
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s

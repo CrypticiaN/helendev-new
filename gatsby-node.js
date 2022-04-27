@@ -16,7 +16,7 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              tags
+              tags projtags
               templateKey
             }
           }
@@ -30,6 +30,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
+    const projects = result.data.allMarkdownRemark.edges
 
     posts.forEach((edge) => {
       const id = edge.node.id
@@ -46,16 +47,38 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
+    projects.forEach((edge) => {
+      const id = edge.node.id
+      createPage({
+        path: edge.node.fields.slug,
+        projtags: edge.node.frontmatter.projtags,
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id,
+        },
+      })
+    })
+
     // Tag pages:
     let tags = []
+    let projtags = []
     // Iterate through each post, putting all found tags into `tags`
     posts.forEach((edge) => {
       if (_.get(edge, `node.frontmatter.tags`)) {
         tags = tags.concat(edge.node.frontmatter.tags)
       }
     })
+    projects.forEach((edge) => {
+      if (_.get(edge, `node.frontmatter.projtags`)) {
+        projtags = projtags.concat(edge.node.frontmatter.projtags)
+      }
+    })
     // Eliminate duplicate tags
     tags = _.uniq(tags)
+    projtags = _.uniq(projtags)
 
     // Make tag pages
     tags.forEach((tag) => {
@@ -66,6 +89,17 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/tags.js`),
         context: {
           tag,
+        },
+      })
+    })
+    projtags.forEach((projtag) => {
+      const projtagPath = `/projtags/${_.kebabCase(projtag)}/`
+
+      createPage({
+        path: projtagPath,
+        component: path.resolve(`src/templates/projtags.js`),
+        context: {
+          projtag,
         },
       })
     })
