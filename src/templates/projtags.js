@@ -16,7 +16,7 @@ class ProjTagRoute extends React.Component {
     const projtag = this.props.pageContext.projtag;
     const title = this.props.data.site.siteMetadata.title;
     const totalCount = this.props.data.allMarkdownRemark.totalCount;
-    const projtagHeader = `${totalCount} projtag${
+    const projtagHeader = `${totalCount} project${
       totalCount === 1 ? "" : "s"
     } tagged with “${projtag}”`;
 
@@ -46,7 +46,7 @@ class ProjTagRoute extends React.Component {
 
 export default ProjTagRoute;
 
-export const ProjtagPageQuery = graphql`
+export const projTagPageQuery = graphql`
   query ProjTagPage($projtag: String) {
     site {
       siteMetadata {

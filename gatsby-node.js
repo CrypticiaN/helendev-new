@@ -16,7 +16,8 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              tags projtags
+              tags
+              projtags
               templateKey
             }
           }

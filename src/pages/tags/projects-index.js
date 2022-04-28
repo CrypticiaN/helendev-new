@@ -22,7 +22,7 @@ const ProjTagsPage = ({
             style={{ marginBottom: "6rem" }}
           >
             <h1 className="title is-size-2 is-bold-light">Project Tags</h1>
-            <ul className="taglist">
+            <ul className="projtaglist">
               {group.map((projtag) => (
                 <li key={projtag.fieldValue}>
                   <Link to={`/portfolio/${kebabCase(projtag.fieldValue)}/`}>
