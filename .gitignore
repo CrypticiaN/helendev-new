@@ -9,3 +9,4 @@ static/admin/*.bundle.*
 yarn-error.log
 # Extension Files
 .vscode/.react
+.idea/

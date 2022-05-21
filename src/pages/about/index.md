@@ -3,17 +3,36 @@ templateKey: 'about-page'
 path: /about
 title: About Myself
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+I am a Junior FullStack Developer very eager to grow in the IT world.   
+Sociable y empathetic, always looking for win-win solutions
+and with a lot of interest and energy towards discovering and
+adapting to new things. I am passionate about technology and
+self-studying blockchain ecosystem and development.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+### Background
+After graduating Middle School in Germany and spending some time
+near Málaga as an Au-Pair (living with a family supervising their children) I 
+set out for a career in foreign languages, studying Spanish, English and
+German and translating/interpreting between these languages. 
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Having finished the training with great success, I returned to Spain in the 
+mindset of increasing my language skills - a goal that has been very successful
+and which led to my decision of staying here permanently in Barcelona, one of my
+favourite cities.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Using my great communication skills and the three languages I speak fluently, 
+I worked in Customer Service and Marketing, attending to telephone calls, emails
+and support chats. I enjoyed working in very diverse and multilingual teams, caring
+for customers and solving any inquiries about the company, products, orders or payments.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+### My entrance into Tech
+In late 2017, when Bitcoin reached its first big boom and the awareness of blockchain 
+entered as a huge wave, and numerous Altcoins started popping up around the globe, each
+claiming to have a different, new way of implementing the technology and specific utilities
+of the coin, I was fascinated! 
+
+Spending hours and hours of research about blockchain and cryptocurrency, I became more
+and more interested in the underlying technology, scripts and data that make all this 
+possible. Being able to create, maintain, troubleshoot and improve tools that may be used by
+millions of people around the globe is something I find very exciting, and
+rewarding. This is how I found my passion for coding!
