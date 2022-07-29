@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
@@ -13,15 +12,31 @@ export const SkillsPageTemplate = ({
   title,
   heading,
   intro,
-  main,
-  fullImage
 }) => {
   const heroImage = getImage(image) || image;
-  const fullWidthImage = getImage(fullImage) || fullImage;
 
   return (
     <div className="content">
       <FullWidthImage img={heroImage} title={title} />
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-7 is-offset-1">
+                <h3 className="has-text-weight-semibold is-size-2">
+                  {heading}
+                </h3>
+              </div>
+            </div>
+            
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <Features gridItems={intro.blurbs} /> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -100,8 +115,6 @@ export const skillsPageQuery = graphql`
             }
             text
           }
-          heading
-          description
         }
       }
     }
