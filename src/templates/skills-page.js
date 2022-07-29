@@ -36,38 +36,6 @@ export const SkillsPageTemplate = ({
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <Features gridItems={intro.blurbs} /> 
-                <div className="columns">
-                  <div className="column is-7">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      {main.heading}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-7 is-offset-1">
-                <h3 className="has-text-weight-semibold is-size-2">
-                  {heading}
-                </h3>
-              </div>
-            </div>
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <Features gridItems={intro.blurbs} /> 
-                <div className="columns">
-                  <div className="column is-7">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      {main.heading}
-                    </h3>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -85,14 +53,6 @@ SkillsPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 const SkillsPage = ({ data }) => {
@@ -105,8 +65,6 @@ const SkillsPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         intro={frontmatter.intro}
-        main={frontmatter.main}
-        fullImage={frontmatter.full_image}
       />
     </Layout>
   );
@@ -144,40 +102,6 @@ export const skillsPageQuery = graphql`
           }
           heading
           description
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(quality: 72, layout: FULL_WIDTH)
-              }
-            }
-          }
-        }
-
-        full_image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
         }
       }
     }
