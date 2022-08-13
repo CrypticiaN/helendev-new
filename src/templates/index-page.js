@@ -38,14 +38,16 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   <div className="columns">
-                    <div className="column is-12">
+                    <div className="column is-12 intro-text">
                       <h3 className="has-text-weight-semibold is-size-2">
                         {heading}
                       </h3>
                       <p>{description}</p>
                     </div>
                   </div>
-                  <Features gridItems={intro.blurbs} />
+                  <div className="service-topics">
+                    <Features gridItems={intro.blurbs} />
+                  </div>
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/skills">
